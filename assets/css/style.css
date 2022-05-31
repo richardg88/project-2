@@ -56,3 +56,13 @@ header > h1 {
     top: 30px;
     right: -40px;
 }
+
+.results {
+    font-size: 41px;
+    color: #ffffff;
+}
+
+.results > p {
+    text-align: center;
+    font-family: Anton, sans-serif;
+}
