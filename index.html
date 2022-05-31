@@ -10,6 +10,33 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <header>
+        <h1>Rock Paper Scissors Game</h1>
+    </header>
+
+    <div class="score-board">
+        <div id="user-label" class="badge">User</div>
+        <div id="computer-label" class="badge">Computer</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="results">
+        <p>Paper covers rock. You win!</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="assets/images/rock image.png" alt="rock-hand-image">
+        </div>
+        <div class="choice" id="paper">
+            <img src="assets/images/paper image.png" alt="paper-hand-image">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="assets/images/scissors image.png" alt="scissors-hand-image">
+        </div>
+    </div>
+
+    <p id="action-message">Make Your Move</p>
     
     <script src="assets/js/script.js"></script>
 </body>
