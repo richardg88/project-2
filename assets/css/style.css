@@ -37,6 +37,8 @@ header > h1 {
     position: relative;
 }
 
+/* Style for user and computer badges */
+
 .badge {
     background: red;
     color: #ffffff;
@@ -57,6 +59,8 @@ header > h1 {
     right: -40px;
 }
 
+/* Style for results section */
+
 .results {
     font-size: 41px;
     color: #ffffff;
@@ -65,4 +69,33 @@ header > h1 {
 .results > p {
     text-align: center;
     font-family: Anton, sans-serif;
+}
+
+/* Style and layout for images */
+
+.choices {
+    margin-top: 50px 0;
+    text-align: center;
+}
+
+.choice {
+    display: inline-block;
+    margin: 0 25px;
+    padding: 10px;
+    transition: bounce;
+}
+
+.choice:hover {
+    cursor: grab;
+}
+
+/* Style for action message */
+
+#action-message {
+    text-align: center;
+    text-decoration: underline red;
+    color: white;
+    font-family: Anton, sans-serif;
+    font-size: 30px;
+    margin-top: 25px;
 }
