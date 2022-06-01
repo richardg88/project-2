@@ -29,13 +29,10 @@ function lose(userChoice, computerChoice) {
   userScoreSpan.innerHTML = userScore;
   computerScoreSpan.innerHTML = computerScore;
   resultsP.innerHTML = `${userChoice} loses to ${computerChoice}. Sorry You Lost`;
-
 }
 
 function draw(userChoice, computerChoice) {
   resultsP.innerHTML = `${userChoice} equals ${computerChoice}. Whoops! Its a draw`;
-
-
 }
 
 function game(userChoice) {
