@@ -1,11 +1,13 @@
 // Wait for the DOM to finish loading before running the game
 // Code inspriation from freecodecamp.org
 
+/*jshint esversion: 6 */
+/*jshint -W033 */
+
 let userScore = 0;
 let computerScore = 0;
 const userScoreSpan = document.getElementById("user-score");
 const computerScoreSpan = document.getElementById("computer-score");
-const scoreBoardDiv = document.querySelector(".score-board");
 const resultsP = document.querySelector(".results > p");
 const rockDiv = document.getElementById("rock");
 const paperDiv = document.getElementById("paper");
