@@ -1,108 +1,92 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper, Scissors Game
 
-Welcome richardg88,
+The Rock, Paper Scissors game has been created for a single user to play against the computer. It has been built using simple JavaScript, HTML and CSS to ensure a clean and fast loading game. Scores are shown for both the user and computer ensuring their is a sense of competetiveness, also engaging the user to continue and remain engaged.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Responsiveness
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The responsiveness has been tested using the site [Am I Responsive](https://ui.dev/amiresponsive) It showed the game works perfectly across all devices.
+![Responsiveness](assets/images/responsivness-project2.png)
 
-## Gitpod Reminders
+## Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Inthis section I shall explain the different features of the game and how it benefits the users.
 
-`python3 -m http.server`
+* #### Game Title
 
-A blue button should appear to click: _Make Public_,
+The header part of the game immediatly tells the user what game they are about to play.
 
-Another blue button should appear to click: _Open Browser_.
+![Game Title](assets/images/header-project2.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* #### Score Area
 
-A blue button should appear to click: _Make Public_,
+The score area shows both the user and computers scores. It will change as the game goes on and ensures the user is engaged within the game.
 
-Another blue button should appear to click: _Open Browser_.
+![Score Area](assets/images/score-area-project2.png)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* #### Game Results Area
 
-To log into the Heroku toolbelt CLI:
+This section of the game shows what the user chose either rock, paper or scissors and shows the users if they have won, lost or drew, including what the computer chose.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Game Results Area](assets/images/says-who-one-area-project2.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* #### Player Choices Area
 
-------
+The player choices area of the game show three images, fist to show a rock, palm to show paper and a scissor hand image to show scissors. The player can click on either to make a choice. If the users wins then the image will glow green, if the users loses the image will glow red and if the user chooses the same as the computer, then it will glow grey.
 
-## Release History
+![Player Choice Area](assets/images/game-choices-area-project2.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Testing
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+The code has been tested to show the HTML runs with no errors, that the CSS runs with no errors and that the JavaScript runs with no errors. All areas run well showing no errors as expected.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Validator Testing
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* #### HTML
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+When the site was run through the [WS3 Validator](https://validator.w3.org/) no errors were shown as shown in the image below.
+![HTML Validator](assets/images/html-validator-project2.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* #### CSS
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+The site was run through the [Jigsaw Validator](https://jigsaw.w3.org/css-validator/) and showed no errors as shown in the image below.
+![CSS Validator](assets/images/css-validator-project2.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* #### JavaScript
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The site was run through the [Jshint Validator](https://jshint.com/) and returned no errors with the following metrics
+* There are 12 functions in this file.
+* Function with the largest signature take 2 arguments, while the median is 0.
+* Largest function has 7 statements in it, while the median is 1.5.
+* The most complex function has a cyclomatic complexity value of 10 while the median is 1.
+![JavaScript Validator](assets/images/js-validator-project2.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* #### Lighthouse Test
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The site was tested for performance, best practices and accessibility using Google Lighthouse. All reports game back excellent as shown in the image below.
+![Google Lighthouse Report](assets/images/lighthouse-validator-project2.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Deployment
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The site was deployed to GitHub pages. The steps are as follows:
+* In the GitHub repository, navigate to the Settings tab
+* From the source section drop-down menu, select the Master Branch
+* Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+The live link can be found here - https://richardg88.github.io/project-2/
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Credits
 
-------
+The inspiration for the game, code, images and fonts were from the following:
 
-## FAQ about the uptime script
+### Code 
+* Inspiration for the game and code used in this game was used from [Free Code Camp](https://www.freecodecamp.org/)
 
-**Why have you added this script?**
+### Media
+* Images used in this game were created using [Canva](https://www.canva.com/)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Content
+* Font used in the game creation was created using [Google Fonts](https://fonts.google.com/)
 
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Bugs
+During the JavaScript validation, i found several semicolon errors showing. This was rectified buy adding the comments  
+/*jshint esversion: 6 */ /*jshint -W033 */ to the begining of the JavaScript file.
